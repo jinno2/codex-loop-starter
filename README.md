@@ -8,7 +8,7 @@ AI に「実装 → テスト → 記録」を丸ごとやらせる最小の仕�
 ターミナルを開いて、この1行をコピーして貼り付けて実行してください。
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/jinno2/codex-loop-starter/one-liner/start.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/jinno2/codex-loop-starter/main/start.sh)"
 ```
 
 数分待つと、こうなります:
@@ -41,9 +41,9 @@ AI が書いたものは**必ず自分の目で確認してから**使ってく�
 ## さらに自分の仕事をやらせたい
 
 `try-loop/jobs/` に指示文の `.md` ファイルを足して、もう1回 `python3 run_loop.py`
-を実行するだけです。書き方のくふうは main ブランチの README を参照:
+を実行するだけです。書き方のくふうは engineer ブランチの README を参照:
 
-https://github.com/jinno2/codex-loop-starter（エンジニア向け・カスタマイズ全般）
+https://github.com/jinno2/codex-loop-starter/tree/engineer（カスタマイズ全般）
 
 ## ライセンス
 

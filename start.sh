@@ -9,7 +9,7 @@
 # あなたのPCの他のファイルには触れません。作るのは ./try-loop だけです。
 set -euo pipefail
 
-BRANCH=one-liner
+BRANCH=main
 BASE="https://raw.githubusercontent.com/jinno2/codex-loop-starter/$BRANCH"
 
 say() { printf '\n%s\n' "$*"; }
