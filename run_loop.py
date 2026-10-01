@@ -103,7 +103,8 @@ def main() -> int:
         print(f"結果: {status}（{duration}s・記録: {log_path.name}）")
 
         if status != "green" and cfg["stop_on_fail"]:
-            print("失敗で停止（config.json の stop_on_fail で変更可）")
+            print("失敗で停止（config.json の stop_on_fail で変更可）。"
+                  "もう一度実行すると成功することがあります（AI の出力むら）。")
             return 1
     print("\n全ジョブ完了")
     return 0

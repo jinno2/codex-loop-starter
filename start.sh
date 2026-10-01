@@ -41,7 +41,20 @@ say "これから codex が「文字計数ツール」を実装し、テスト�
 cd "$DIR"
 # stdin を切って実行（codex がプロンプトを引数で受け取るため・
 # パイプ/自動実行環境で標準入力を待って止まるのを防ぐ）
+set +e
 "$PY" run_loop.py < /dev/null
+rc=$?
+if [ "$rc" -ne 0 ]; then
+  say "失敗したようです。もう一度だけ自動で試します（AI の出力むらで成功することがあります）"
+  "$PY" run_loop.py < /dev/null
+  rc=$?
+fi
+set -e
+if [ "$rc" -ne 0 ]; then
+  say "2回とも失敗しました。通信状態を確認して・時間を置いてもう一度お試しください。"
+  say "（./$DIR はそのまま残っています。再実行は同じコマンドでOKです）"
+  exit 1
+fi
 
 say ""
 say "=== 完了! ==="
