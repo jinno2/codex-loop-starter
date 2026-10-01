@@ -39,7 +39,9 @@ curl -fsSL "$BASE/jobs/example-job.md" -o "$DIR/jobs/example-job.md"
 say "=== 準備OK: ./$DIR にサンプルジョブを用意しました ==="
 say "これから codex が「文字計数ツール」を実装し、テストが走ります（数分かかります）"
 cd "$DIR"
-"$PY" run_loop.py
+# stdin を切って実行（codex がプロンプトを引数で受け取るため・
+# パイプ/自動実行環境で標準入力を待って止まるのを防ぐ）
+"$PY" run_loop.py < /dev/null
 
 say ""
 say "=== 完了! ==="
