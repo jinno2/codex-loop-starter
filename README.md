@@ -3,9 +3,9 @@
 「**ジョブ定義 → codex で実装 → テスト実行 → 結果を記録**」という最小の
 自律開発ループを、公開されている Codex CLI だけで手元で試せるキットです。
 
-> **コマンド1行で試したい方（macOS / Linux）**: [one-liner ブランチ](
-> https://github.com/jinno2/codex-loop-starter/tree/one-liner) の
-> 1行スターター版へ。この README はカスタマイズ前提のエンジニア向けです。
+> **コマンド1行で試したい方（macOS / Linux）**: main ブランチの
+> 1行スターター版へ → https://github.com/jinno2/codex-loop-starter
+> この README（engineer ブランチ）はカスタマイズ前提のエンジニア向けです。
 
 ## 5分で試す
 
