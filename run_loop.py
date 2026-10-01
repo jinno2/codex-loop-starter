@@ -10,7 +10,7 @@
     python3 run_loop.py --dry-run       # 実行せず対象ジョブだけ表示
 設定は同じ dir の config.json（任意）:
     {"jobs_dir": "jobs",
-     "codex_command": "codex exec -s workspace-write \"$(cat {job_file})\"",
+     "codex_command": "codex exec --skip-git-repo-check -s workspace-write \"$(cat {job_file})\"",
      "test_command": "python3 -m pytest -q",
      "results_log": "results/log.jsonl",
      "stop_on_fail": true}
@@ -28,7 +28,7 @@ HERE = Path(__file__).resolve().parent
 
 DEFAULTS = {
     "jobs_dir": "jobs",
-    "codex_command": 'codex exec -s workspace-write "$(cat {job_file})"',
+    "codex_command": 'codex exec --skip-git-repo-check -s workspace-write "$(cat {job_file})"',
     "test_command": "python3 -m pytest -q",
     "results_log": "results/log.jsonl",
     "stop_on_fail": True,
