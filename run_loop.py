@@ -11,7 +11,7 @@
 設定は同じ dir の config.json（任意）:
     {"jobs_dir": "jobs",
      "codex_command": "codex exec --skip-git-repo-check -s workspace-write \"$(cat {job_file})\"",
-     "test_command": "python3 -m pytest -q",
+     "test_command": "python3 -m unittest discover -q",
      "results_log": "results/log.jsonl",
      "stop_on_fail": true}
 """
@@ -29,7 +29,7 @@ HERE = Path(__file__).resolve().parent
 DEFAULTS = {
     "jobs_dir": "jobs",
     "codex_command": 'codex exec --skip-git-repo-check -s workspace-write "$(cat {job_file})"',
-    "test_command": "python3 -m pytest -q",
+    "test_command": "python3 -m unittest discover -q",
     "results_log": "results/log.jsonl",
     "stop_on_fail": True,
 }
