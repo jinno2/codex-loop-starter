@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-17T14:28:02Z",
+  "long_term": {
+    "summary": null,
+    "source": null,
+    "source_hash": null,
+    "updated_at": null
+  },
+  "short_term": {
+    "summary": null,
+    "source": null,
+    "source_hash": null,
+    "updated_at": null,
+    "status": "unknown"
+  }
+}
