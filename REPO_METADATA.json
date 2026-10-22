@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "verified_at": "2026-10-17T14:28:02Z",
+  "verified_at": "2026-10-22T13:39:28Z",
   "long_term": {
-    "summary": null,
-    "source": null,
-    "source_hash": null,
-    "updated_at": null
+    "summary": "Maintain a one-command Codex starter whose setup, bounded effects, test behavior, and result record are reproducibly verified.",
+    "source": "ORDER.md",
+    "source_hash": "git-blob:1240c43b34fff027514a2c275ffc8808018e7ff9",
+    "updated_at": "2026-10-22"
   },
   "short_term": {
-    "summary": null,
-    "source": null,
-    "source_hash": null,
-    "updated_at": null,
-    "status": "unknown"
+    "summary": "Add a stubbed end-to-end success-path test for start.sh and verify its writes stay under try-loop/.",
+    "source": "docs/MILESTONES.md#MS-001",
+    "source_hash": "git-blob:5da9a0f07d6bab5b4fc2a3a6aa33122e032a1892",
+    "updated_at": "2026-10-22",
+    "status": "not_started"
   }
 }
