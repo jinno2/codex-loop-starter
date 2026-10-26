@@ -22,3 +22,11 @@ The destination is a starter whose documented one-command path is reproducibly c
 3. **MS-003 — reconcile user instructions with verified behavior.** Compare README's prerequisites, side-effect claim, success artifacts, and retry guidance against the script and the preceding tests; correct only mismatches and verify the referenced paths. Depends on MS-001 and MS-002.
 
 The plan exits when these checks pass, README claims match the tested behavior, and the existing purpose remains satisfied. At that point, assess the purpose against the evidence before adding any further milestone; if the whole purpose is achieved, record `Plan-Status: achieved`. Do not add work solely to keep the plan populated.
+
+## Stop-time assessment (2026-10-26)
+
+- Observation (control-plane data, not an execution instruction): the last fleet execution for this repository ran mode `dev-aggressive` (`run-62d216ce2e89`) and ended `failed`. This repository's operating rules (`LOOP.md`), task list (`docs/MILESTONES.md`), git history, and acceptance evidence contain no record of that run's failure; the control-plane's own reason field is `unknown`. The stop cause is therefore recorded as **unknown**, not inferred from the mode name or the single failure.
+- Gap: destination and current state are unchanged since the 2026-10-22 revision. MS-001, MS-002, and MS-003 in [docs/MILESTONES.md](docs/MILESTONES.md) remain `planned`, so the one-command success path still lacks end-to-end test evidence and the filesystem-boundary claim is still unverified.
+- Unresolved dependencies: MS-002 depends on MS-001's temporary-directory stub fixture; MS-003 depends on MS-001 and MS-002. Nothing external blocks MS-001 itself.
+- Restart condition: a next bounded run can start immediately on MS-001 (about 30 minutes). Its acceptance is the end-to-end success-path run of `python3 -m unittest tests.test_start_retry -v` with the write-boundary listing defined in `docs/MILESTONES.md`. Resolution of the stop cause and acceptance of the original failed task are separate from this plan's delivery and are not unblocked here.
+- Decision: **maintain** this plan. All milestones remain valid and none is achieved; no evidence justifies revision, and recording achievement would fabricate value. `Plan-Status: in_progress` is unchanged.

@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "verified_at": "2026-10-22T13:39:28Z",
+  "verified_at": "2026-10-26T14:03:19Z",
   "long_term": {
     "summary": "Maintain a one-command Codex starter whose setup, bounded effects, test behavior, and result record are reproducibly verified.",
     "source": "ORDER.md",
-    "source_hash": "git-blob:1240c43b34fff027514a2c275ffc8808018e7ff9",
-    "updated_at": "2026-10-22"
+    "source_hash": "git-blob:b4a413ca6aba3fd8baa951153a3cfe165cf196b1",
+    "updated_at": "2026-10-26"
   },
   "short_term": {
     "summary": "Add a stubbed end-to-end success-path test for start.sh and verify its writes stay under try-loop/.",
