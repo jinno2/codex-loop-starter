@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "verified_at": "2026-11-08T21:14:00Z",
+  "verified_at": "2026-11-09T03:18:24Z",
   "long_term": {
     "summary": "Maintain a one-command Codex starter whose setup, bounded effects, test behavior, and result record are reproducibly verified.",
     "source": "ORDER.md",
-    "source_hash": "git-blob:7e18fd50ee9c642b5f0c8ef82d3eddb954414209",
+    "source_hash": "git-blob:f496c2c7ee298b8243c098d5d2cb6848fd1b28cd",
     "updated_at": "2026-11-09"
   },
   "short_term": {
